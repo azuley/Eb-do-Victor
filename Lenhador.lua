@@ -54,7 +54,7 @@ local function equipMachado()
     local tool = player.Backpack:FindFirstChild("Machado")
     if tool then
         humanoid:EquipTool(tool)
-        task.wait(0.5)
+        task.wait(0.1)
     end
 end
 
@@ -101,7 +101,7 @@ while true do
                         if entregaPrompt and entregaPrompt:IsA("ProximityPrompt") then
                             teleportTo(entregaPrompt.Parent)
                             fireproximityprompt(entregaPrompt)
-                            task.wait(0.2)
+                            task.wait(0.25)
                         end
                     end
                     equipMachado()
@@ -109,5 +109,5 @@ while true do
             end
         end
     end
-    task.wait(0.15)
+    task.wait(0.1)
 end
